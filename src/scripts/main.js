@@ -6,13 +6,13 @@ import '../styles/main.scss';
 const init = () => {
   document.querySelector('#app').innerHTML = `
     <h1>Welcome to Vocab-YOU-lary!</h1>
-    <button class="btn btn-danger" id="LOGIN">LOGIN</button><br />
+    <button class="btn btn-danger" id="login">Login</button><br />
     <hr />
   `;
   console.warn('YOU ARE UP AND RUNNING!');
 
   document
-    .querySelector('#click-me')
+    .querySelector('#login')
     .addEventListener('click', () => console.warn('You clicked that button!'));
 
   // USE WITH FIREBASE AUTH
