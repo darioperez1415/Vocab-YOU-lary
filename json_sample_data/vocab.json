@@ -1,0 +1,14 @@
+{
+    "-MTpcli73mfiIqW0lpPe": {
+        "title": "function",
+        "firebaseKey": "-MTpcli73mfiIqW0lpPe",
+        "definition": "A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output",
+        "language": "javascript"
+    },
+    "-MTpcli9kmjpvbdr-ckb": {
+        "title": "Heading tag",
+        "firebaseKey": "-MTpcli73mfiIqW0lpPe",
+        "definition": "The heading tag is used in HTML to define headings of a page. Headings are defined by <hn> , with “n” being a number between 1 and 6, and determines which position a heading has in the hierarchy of the heading structure. Heading tags have a particularly important function within an HTML structure",
+        "language": "HTML"
+    }
+}
