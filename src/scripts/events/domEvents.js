@@ -1,4 +1,4 @@
-import showVocab from '../components/vocab';
+import { showVocab } from '../components/vocab';
 import { createVocab } from '../helpers/data/vocabData';
 
 const domEvents = (uid) => {

@@ -12,8 +12,8 @@ const checkLoginStatus = () => {
       startApp();
     } else {
       // person is NOT logged in
-      document.querySelector('#welcome').innerHTML = `
-      <h1>Welcome to Vocab-YOU-lary!</h1>`;      
+      // document.querySelector('#welcome').innerHTML = `
+      // <h1>Welcome to Vocab-YOU-lary!</h1>`;
       loginButton();
     }
   });

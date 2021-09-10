@@ -1,5 +1,5 @@
 import addVocabForm from '../components/forms/AddVocabForm';
-import showVocab from '../components/vocab';
+import { showVocab } from '../components/vocab';
 import { getVocab } from '../helpers/data/vocabData';
 import signOut from '../helpers/signOut';
 

@@ -1,11 +1,17 @@
 import domBuilder from '../../components/domBuilder';
 import navBar from '../../components/navBar';
-import showVocab from '../../components/vocab';
-import getVocab from '../data/vocabData';
+import logoutButton from '../../components/logoutButton';
+import navigationEvents from '../../events/navigationEvents';
+import domEvents from '../../events/domEvents';
+import { showVocab } from '../../components/vocab';
+import { getVocab } from '../data/vocabData';
 
-const startApp = () => {
+const startApp = (user) => {
   domBuilder();
   navBar();
+  logoutButton();
+  domEvents(user.uid);
+  navigationEvents(user.uid);
   getVocab().then((items) => showVocab(items));
 };
 
