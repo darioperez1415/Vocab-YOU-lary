@@ -1,4 +1,4 @@
-import { showVocab } from '../components/vocab';
+import { showVocab } from '../components/ViewVocab';
 import { createVocab } from '../helpers/data/vocabData';
 
 const domEvents = (uid) => {
@@ -17,5 +17,5 @@ const domEvents = (uid) => {
     }
   });
 };
-
+// Delete ,Edit,Submit
 export default domEvents;

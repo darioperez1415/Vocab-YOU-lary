@@ -3,7 +3,7 @@ import navBar from '../../components/navBar';
 import logoutButton from '../../components/logoutButton';
 import navigationEvents from '../../events/navigationEvents';
 import domEvents from '../../events/domEvents';
-import { showVocab } from '../../components/vocab';
+import { showVocab } from '../../components/ViewVocab';
 import { getVocab } from '../data/vocabData';
 
 const startApp = (user) => {
@@ -12,7 +12,7 @@ const startApp = (user) => {
   logoutButton();
   domEvents(user.uid);
   navigationEvents(user.uid);
-  getVocab().then((items) => showVocab(items));
+  getVocab(user.uid).then(showVocab);
 };
 
 export default startApp;
