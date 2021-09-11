@@ -10,8 +10,9 @@ const showVocab = (array) => {
           <h5 class="card-title">${item.title}</h5>
           <h6 class="card-subtitle mb-2 text-muted">${item.language}</h6>
           <p class="card-text">${item.definition}</p>
-          <a href="#" class="card-link">Edit</a>
-          <a href="#" class="card-link">Delete</a>
+          <hr>
+          <i id="edit-vocab-btn--${item.firebaseKey}" class="fas fa-edit btn btn-info"></i>
+          <i id="delete-vocab--${item.firebaseKey}" class="btn btn-danger fas fa-trash-alt"></i>
         </div>
       </div>
     `;
@@ -19,7 +20,7 @@ const showVocab = (array) => {
 };
 
 const emptyVocab = () => {
-  document.querySelector('#home').innerHTML = '<h1>No Vocab Entries</h1>';
+  document.querySelector('#library').innerHTML = '<h1>No Vocab Entries</h1>';
 };
 
 export { showVocab, emptyVocab };

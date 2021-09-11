@@ -3,7 +3,7 @@ import navBar from '../../components/navBar';
 import logoutButton from '../../components/logoutButton';
 import navigationEvents from '../../events/navigationEvents';
 import domEvents from '../../events/domEvents';
-import { showVocab } from '../../components/ViewVocab';
+import { showVocab } from '../../components/vocab';
 import { getVocab } from '../data/vocabData';
 
 const startApp = (user) => {

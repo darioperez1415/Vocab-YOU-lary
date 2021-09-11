@@ -30,4 +30,18 @@ const createVocab = (vocabObj) => new Promise((resolve, reject) => {
     }).catch((error) => reject(error));
 });
 
-export { getVocab, getSingleVocab, createVocab };
+// DELETE VOCAB
+const deleteVocab = (firebaseKey) => new Promise((resolve, reject) => {
+  axios.delete(`${dbUrl}/vocab/${firebaseKey}.json`)
+    .then(() => {
+      getVocab().then(resolve);
+    })
+    .catch(reject);
+});
+
+export {
+  getVocab,
+  getSingleVocab,
+  createVocab,
+  deleteVocab
+};
