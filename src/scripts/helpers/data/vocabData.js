@@ -39,9 +39,16 @@ const deleteVocab = (firebaseKey) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const updateVocab = (vocabObj) => new Promise((resolve, reject) => {
+  axios.patch(`${dbUrl}/vocab/${vocabObj.firebaseKey}.json`, vocabObj)
+    .then(() => getVocab(vocabObj).then(resolve))
+    .catch(reject);
+});
+
 export {
   getVocab,
   getSingleVocab,
   createVocab,
-  deleteVocab
+  deleteVocab,
+  updateVocab
 };
