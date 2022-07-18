@@ -1,5 +1,4 @@
-import firebase from 'firebase/app';
-import 'firebase/auth';
+import firebase from 'firebase/compat/app';
 
 const signIn = () => {
   const provider = new firebase.auth.GoogleAuthProvider();
